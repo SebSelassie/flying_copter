@@ -5,9 +5,11 @@
  */
 
 
+const ELAPSES = 6
+const PAUSE_TIME = 50
 var clear = require('clear');
 
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < ELAPSES; i++) {
 		let ident = get_ident_string(i)
 
 		clear();
@@ -22,7 +24,7 @@ for (let i = 0; i < 5; i++) {
 		console.log(ident + "")
 
 		
-		pause(50);	
+		pause(PAUSE_TIME);	
 		clear();
 		console.log(ident + "")
 		console.log(ident + "             :OOO:XXXX:XXXX:")
@@ -34,7 +36,7 @@ for (let i = 0; i < 5; i++) {
 		console.log(ident + "               I     I    ")
 		console.log(ident + "")
 
-		pause(50);
+		pause(PAUSE_TIME);
 
 		clear();
 		console.log(ident + "")
@@ -46,7 +48,7 @@ for (let i = 0; i < 5; i++) {
 		console.log(ident + "              \\___________]  ")
 		console.log(ident + "                  I     I    ")
 		console.log(ident + "")
-		pause(50);
+		pause(PAUSE_TIME);
 
 
 }
